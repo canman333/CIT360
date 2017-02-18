@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 6 elements to &apos;Threads_Runnables_Executors/src&apos;&#x0D;&#x0A;- Original project: &apos;Threads_Runnables_Executors&apos;&#x0D;&#x0A;- Destination element: &apos;Threads_Runnables_Executors/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     myHandler.java&#x0D;&#x0A;     execRunnable.java&#x0D;&#x0A;     myExecutor.java&#x0D;&#x0A;     myRunnable.java&#x0D;&#x0A;     myThread.java&#x0D;&#x0A;     runThread.java&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/src" element1="myHandler.java" element2="execRunnable.java" element3="myExecutor.java" element4="myRunnable.java" element5="myThread.java" element6="runThread.java" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1476861611799" units="0" version="1.0"/>
+</session>
