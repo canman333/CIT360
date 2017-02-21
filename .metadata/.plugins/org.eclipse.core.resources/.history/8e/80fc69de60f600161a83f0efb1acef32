@@ -1,0 +1,24 @@
+package collections;
+
+import java.util.*;
+
+public class SetTest {
+
+	public static void main(String[] args){
+		
+		
+	}
+	
+	public static Set<String> hashTest(){
+		
+		Set<String> iceCream = new HashSet<String>();
+		iceCream.add("Chocolate");
+		iceCream.add("Vanilla");
+		iceCream.add("Peanut Butter");
+		iceCream.add("Mint");
+		
+		System.out.println("Who likes mint???? Not Me!");
+		
+		iceCream.remove("Mint");
+	}
+}

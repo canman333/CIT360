@@ -1,0 +1,8 @@
+package json;
+
+import javax.json.
+public class SuperheroReader {
+	public static void main(String args[]){
+		JsonReader Batman = new JsonReader();
+	}
+}

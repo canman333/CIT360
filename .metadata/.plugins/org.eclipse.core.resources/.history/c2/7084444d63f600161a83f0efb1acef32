@@ -1,0 +1,17 @@
+package collections;
+
+import java.util.*;
+
+public class TreeTest {
+	public static void main(String[] args){
+		
+	}
+	
+	public static TreeSet<String> BooksInLibrary(){
+		TreeSet<String> books = new TreeSet<String>("Mistborn: The Final Empire", "Mistborn: The Well of Ascension", "Mistborn: The Hero Of Ages", "Words of Radiance", "Way of Kings", "The Rithmatist");
+		Iterator<String> bookIterator = books.iterator();
+		while(bookIterator.hasNext()){
+			System.out.println(bookIterator.next() + "\n");
+		}
+	}
+}

@@ -1,0 +1,50 @@
+package collections;
+import java.util.*;
+
+public class ListsTypes {
+
+	public static void main (String[] args){
+		
+		List<String> games = gameList();
+		System.out.println(games);
+		System.out.println(gameGenreList(games));
+	}
+	
+	public static List<String> gameList(){
+		List <String> game = new ArrayList<String>();
+		
+		game.add("Halo");
+		game.add("Halo 2");
+		game.add("Skyrim");
+		game.add("Halo 4");
+		game.add("Resident Evil");
+		game.add("Fallout 4");
+		game.add("Halo Wars");
+		game.add("Halo Wars 2");
+		game.add("Call of Duty");
+		game.add("Medal of Honor");
+		
+		return game;
+	}
+	
+	public static List<String> gameGenreList(List<String> games){
+		
+		LinkedList <String> gameGenre = new LinkedList<String> (games);
+		
+		gameGenre.add("First Person Shooter");
+		gameGenre.add("Role Playing Game");
+		gameGenre.add("Horror");
+		
+		String protagonist = gameGenre.get(0) + " Master Chief";
+		String antagonist = gameGenre.get(1) + " Draugur";
+		String npc = gameGenre.get(2) + " Wesker";
+		
+		gameGenre.set(0, protagonist);
+		gameGenre.set(2, antagonist);
+		gameGenre.set(4, npc);
+		
+		return gameGenre;
+		
+		
+	}
+}
