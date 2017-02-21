@@ -1,0 +1,39 @@
+package httpURLConnectionAndroid;
+
+import java.io.*;
+import java.net.*;
+
+public class HttpURLConnect {
+
+	public static void main(String[] args) throws IOException{
+		
+		httpconnect();
+	}
+	public static void httpconnect() throws IOException{
+		URL url = new URL("http://www.google.com/");
+		HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+		try{
+			InputStream down = new BufferedInputStream(connection.getInputStream());
+			readStream(down);
+			
+		}finally{
+			connection.disconnect();
+		}
+		
+	}
+	private static String readStream(InputStream down) {
+		try{
+			ByteArrayOutputStream bo = new ByteArrayOutputStream();
+			int spy = down.read();
+			while(spy != -1){
+				bo.write(spy);
+				spy = down.read();
+				
+			}
+			return bo.toString();
+		}catch (IOException e){
+			return "";
+		}
+		
+	}
+}
